@@ -50,8 +50,10 @@ HTTPHost = "0.0.0.0"
 HTTPPort = 8545
 HTTPVirtualHosts = ["*"]
 HTTPModules = ["eth", "net", "web3", "txpool", "parlia"]
-WSPort = 8547
-WSModules = ["net", "web3", "eth"]
+WSHost = "0.0.0.0"
+WSPort = 8546
+WSOrigins = ["*"]
+WSModules = ["net", "web3", "eth", "txpool", "parlia"]
 
 [Node.P2P]
 MaxPeers = 30
