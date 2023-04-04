@@ -51,7 +51,7 @@ HTTPPort = 8545
 HTTPVirtualHosts = ["*"]
 HTTPModules = ["eth", "net", "web3", "txpool", "parlia"]
 WSHost = "0.0.0.0"
-WSPort = 8546
+WSPort = 8545
 WSOrigins = ["*"]
 WSModules = ["net", "web3", "eth", "txpool", "parlia"]
 
