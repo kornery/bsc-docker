@@ -25,14 +25,6 @@ services:
       - ./scripts:/scripts
     command: ash /scripts/bsc-validator.sh
 
-  netstats:
-    build: ./netstats
-    ports:
-      - 3000:3000
-    environment:
-      WS_SECRET: bscpwd
-    restart: always
-
 networks:
   default:
     ipam:
