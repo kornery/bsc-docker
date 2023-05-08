@@ -27,10 +27,6 @@ bootstrap-simple:
 start-simple:
 	$(OSFLAG) docker-compose -f docker-compose.simple.yml up -d bsc-rpc bsc-validator1
 
-.PHONY:run-test-simple
-run-test-simple:
-	docker-compose -f docker-compose.simple.yml run truffle-test
-
 # Build & start multiple validator cluster
 
 .PHONY:build-cluster
@@ -46,10 +42,6 @@ bootstrap-cluster:
 .PHONY:start-cluster
 start-cluster:
 	$(OSFLAG) docker-compose -f docker-compose.cluster.yml up -d cluster-bsc-rpc cluster-bsc-validator1 cluster-bsc-validator2 cluster-bsc-validator3
-
-.PHONY:run-test-cluster
-run-test-cluster:
-	docker-compose -f docker-compose.cluster.yml run truffle-test
 
 # Stop & reset
 
